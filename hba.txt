@@ -1,4 +1,125 @@
+echo "# mygit" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/balkhair786/mygit.git
+git push -u origin main
 
+…or push an existing repository from the command line
+git remote add origin https://github.com/balkhair786/mygit.git
+git branch -M main
+git push -u origin main
+
+git diff   --> to check the changes made ( becuz i hit enter and wrote in next line  the word Assalamu Alaikum was removed and then added)
+diff --git a/hasan.txt b/hasan.txt
+index 373c42d..e3dacce 100644
+--- a/hasan.txt
++++ b/hasan.txt
+@@ -1 +1,2 @@
+-Assalamu Alaikum
+\ No newline at end of file
++Assalamu Alaikum
++Hope you are doing good!
+\ No newline at end of file
+git pull    ---> command to pull files from repository
+
+$ git diff   hasan.txt  ------------------------------------------> (i didn't hit enter in this file and continued in the same line )
+diff --git a/hasan.txt b/hasan.txt
+index e3dacce..d659b94 100644
+--- a/hasan.txt
++++ b/hasan.txt
+@@ -1,2 +1,2 @@
+ Assalamu Alaikum
+-Hope you are doing good!
+\ No newline at end of file
++Hope you are doing good! I am fine and doing great
+\ No newline at end of file
+
+$ git add .       -----> this command will save / commit the files
+
+$ git rm --cached hasan.txt     ----> command to untrack the file or to stop tracking a particular file
+rm 'hasan.txt'
+ ----------------------------------------------------------------------------------------------
+
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hasan.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+saving and tracking are two different activity
+
+command to again to track the file 
+
+$ git commit -m"This is my first commit"
+
+[master (root-commit) cc05bb7] This is my first commit
+ 1 file changed, 2 insertions(+)
+ create mode 100644 hasan.txt
+Brief Explanation about this command
+(The command "git commit -m" is used to create a new commit in Git with a specified message. In this case, the command "git commit -m'This is my first commit'" creates a new commit with the given message. Commits are used to save changes made to your project at a specific point in time. Once you have created a commit, you can send it to a remote repository and synchronize your changes with other collaborators.)
+
+$ git log --oneline
+cc05bb7 (HEAD -> master) This is my first commit
+
+$ git commit -m"second commit by hba"
+[master 818539e] second commit by hba
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 100644 hba.txt
+
+$ git log --oneline
+818539e (HEAD -> master) second commit by hba
+cc05bb7 This is my first commit
+
+imp commands
+(git init
+Git status
+Git add .
+Git commit -m”message”)
+
+
+
+
+
+
+UPLOADING THE FILES IN GIT HUT
+
+ git init
+   27  git status
+   28  git diff
+   29  git add .
+   30  git remote add origin https://github.com/balkhair786/git-learning.git
+   31  git log --oneline
+   32  git push -u origin master
+   33  git remote add origin https://github.com/balkhair786/git-learning.git
+   34  git log --oneline
+   35  git remote -v
+   36  git remote add origin https://github.com/balkhair786/git-learning.git
+   37  git log --oneline
+   38  git remote -v
+   39  git status
+   40  git diff
+   41  git commit -m"This is my second commit"
+   42  git log --oneline
+   43  git remote add origin https://github.com/balkhair786/git-learning.git
+   44  git remote rm origin
+   45  git remote add origin https://github.com/balkhair786/git-learning.git
+   47  git remote -v
+   48  git log --oneline
+   49  git push -u origin master
+--------------------------------------------------------------------------------------------------------------------------
+
+remote add origin https://github.com/balkhair786/git-learning.git
+log –oneline
+remote -v
+push -u origin master
 git status
    28  git diff
    29  git add .
@@ -21,3 +142,25 @@ git status
    47  git remote -v
    48  git log --oneline
    49  git push -u origin master
+
+
+
+solution for this problem :-----
+
+$ git push -u origin master
+To https://github.com/balkhair786/git-learning.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/balkhair786/git-learning.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+
+$ git fetch origin
+-----------------------------------------------------------------------------------
+$ git pull origin master
+From https://github.com/balkhair786/git-learning
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
