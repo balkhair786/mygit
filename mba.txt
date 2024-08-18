@@ -2,15 +2,8 @@ Z800@DESKTOP-GOG5ONB MINGW64 ~/Desktop/NewProject (master)
 $ git remote add origin https://github.com/balkhair786/mygit.git
 error: remote origin already exists.
 
-Z800@DESKTOP-GOG5ONB MINGW64 ~/Desktop/NewProject (master)
-$ git log --oneline
-83aa24e (HEAD -> master) This is my ABA file
-70722d7 (origin/master) This is my first project
 
-Z800@DESKTOP-GOG5ONB MINGW64 ~/Desktop/NewProject (master)
-$ git remote -v
-origin  https://github.com/balkhair786/mygit.git (fetch)
-origin  https://github.com/balkhair786/mygit.git (push)
+
 
 Z800@DESKTOP-GOG5ONB MINGW64 ~/Desktop/NewProject (master)
 $ git push -u origin master
