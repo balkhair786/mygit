@@ -1,36 +1,4 @@
 
-$ git remote add origin https://github.com/balkhair786/mygit.git
-error: remote origin already exists.
-
-
-$ git remote -v
-origin  https://github.com/balkhair786/mygit.git (fetch)
-origin  https://github.com/balkhair786/mygit.git (push)
-
-$ git push -u origin master
-Enumerating objects: 4, done.
-Counting objects: 100% (4/4), done.
-Delta compression using up to 12 threads
-Compressing objects: 100% (3/3), done.
-Writing objects: 100% (3/3), 732 bytes | 732.00 KiB/s, done.
-Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
-To https://github.com/balkhair786/mygit.git
-   83aa24e..49768a5  master -> master
-branch 'master' set up to track 'origin/master'.
-
-$ git pull
-remote: Enumerating objects: 5, done.
-remote: Counting objects: 100% (5/5), done.
-remote: Compressing objects: 100% (3/3), done.
-remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
-Unpacking objects: 100% (3/3), 937 bytes | 15.00 KiB/s, done.
-From https://github.com/balkhair786/mygit
-   49768a5..b824e32  master     -> origin/master
-Updating 49768a5..b824e32
-Fast-forward
- mba.txt | 9 +--------
- 1 file changed, 1 insertion(+), 8 deletions(-)
-
 
 $ git pull
 remote: Enumerating objects: 5, done.
