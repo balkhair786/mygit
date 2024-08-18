@@ -1,0 +1,55 @@
+ git diff
+diff --git a/hba.txt b/hba.txt
+index 678b425..fe781ad 100644
+--- a/hba.txt
++++ b/hba.txt
+@@ -1,4 +1,145 @@
++echo "# mygit" >> README.md
++git init
++git add README.md
++git commit -m "first commit"
++git branch -M main
++git remote add origin https://github.com/balkhair786/mygit.git
++git push -u origin main
+
++…or push an existing repository from the command line
++git remote add origin https://github.com/balkhair786/mygit.git
++git branch -M main
++git push -u origin main
++
++
++
++git status     ---> to check the file status
++
++$ git status
+
+Z800@DESKTOP-GOG5ONB MINGW64 ~/Desktop/NewProject (master)
+$ git remote add origin https://github.com/balkhair786/mygit.git
+error: remote origin already exists.
+
+Z800@DESKTOP-GOG5ONB MINGW64 ~/Desktop/NewProject (master)
+$ git remote rm origin
+
+Z800@DESKTOP-GOG5ONB MINGW64 ~/Desktop/NewProject (master)
+$ git remote add origin https://github.com/balkhair786/mygit.git
+
+Z800@DESKTOP-GOG5ONB MINGW64 ~/Desktop/NewProject (master)
+$ git log --oneline
+70722d7 (HEAD -> master) This is my first project
+
+Z800@DESKTOP-GOG5ONB MINGW64 ~/Desktop/NewProject (master)
+$ git remote -v
+origin  https://github.com/balkhair786/mygit.git (fetch)
+origin  https://github.com/balkhair786/mygit.git (push)
+
+Z800@DESKTOP-GOG5ONB MINGW64 ~/Desktop/NewProject (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 251 bytes | 251.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/balkhair786/mygit.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Z800@DESKTOP-GOG5ONB MINGW64 ~/Desktop/NewProject (master)

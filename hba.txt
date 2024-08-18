@@ -1,3 +1,23 @@
-Assalamu Alaikum 
-WRWB
-Hi dear
+
+git status
+   28  git diff
+   29  git add .
+   30  git remote add origin https://github.com/balkhair786/git-learning.git
+   31  git log --oneline
+   32  git push -u origin master
+   33  git remote add origin https://github.com/balkhair786/git-learning.git
+   34  git log --oneline
+   35  git remote -v
+   36  git remote add origin https://github.com/balkhair786/git-learning.git
+   37  git log --oneline
+   38  git remote -v
+   39  git status
+   40  git diff
+   41  git commit -m"This is my second commit"
+   42  git log --oneline
+   43  git remote add origin https://github.com/balkhair786/git-learning.git
+   44  git remote rm origin
+   45  git remote add origin https://github.com/balkhair786/git-learning.git
+   47  git remote -v
+   48  git log --oneline
+   49  git push -u origin master
