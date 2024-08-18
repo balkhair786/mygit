@@ -1,0 +1,29 @@
+Z800@DESKTOP-GOG5ONB MINGW64 ~/Desktop/NewProject (master)
+$ git remote add origin https://github.com/balkhair786/mygit.git
+error: remote origin already exists.
+
+Z800@DESKTOP-GOG5ONB MINGW64 ~/Desktop/NewProject (master)
+$ git log --oneline
+83aa24e (HEAD -> master) This is my ABA file
+70722d7 (origin/master) This is my first project
+
+Z800@DESKTOP-GOG5ONB MINGW64 ~/Desktop/NewProject (master)
+$ git remote -v
+origin  https://github.com/balkhair786/mygit.git (fetch)
+origin  https://github.com/balkhair786/mygit.git (push)
+
+Z800@DESKTOP-GOG5ONB MINGW64 ~/Desktop/NewProject (master)
+$ git push -u origin master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.06 KiB | 1.06 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/balkhair786/mygit.git
+   70722d7..83aa24e  master -> master
+branch 'master' set up to track 'origin/master'.
+
+Z800@DESKTOP-GOG5ONB MINGW64 ~/Desktop/NewProject (master)
+$ git pull
+Already up to date.
