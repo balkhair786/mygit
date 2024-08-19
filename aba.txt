@@ -27,7 +27,7 @@ Z800@DESKTOP-GOG5ONB MINGW64 ~/Desktop/NewProject (master)
 $ git remote add origin https://github.com/balkhair786/mygit.git
 error: remote origin already exists.
 
-Z800@DESKTOP-GOG5ONB MINGW64 ~/Desktop/NewProject (master)
+
 $ git remote rm origin
 
 Z800@DESKTOP-GOG5ONB MINGW64 ~/Desktop/NewProject (master)
@@ -37,7 +37,7 @@ Z800@DESKTOP-GOG5ONB MINGW64 ~/Desktop/NewProject (master)
 $ git log --oneline
 70722d7 (HEAD -> master) This is my first project
 
-Z800@DESKTOP-GOG5ONB MINGW64 ~/Desktop/NewProject (master)
+
 $ git remote -v
 origin  https://github.com/balkhair786/mygit.git (fetch)
 origin  https://github.com/balkhair786/mygit.git (push)
