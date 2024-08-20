@@ -1,4 +1,18 @@
- git diff
+$ git branch --delete branch2-1 (to delete a branch)
+$ git branch (list allthe branches)
+$ * indicate master file
+$ git branch branch1 (command to create a branch)
+$ git log --oneline 
+$ git checkout branch1 (to move to another branch)
+$ touch branch1file.txt (to create a file)
+$ git add branch1file.txt (to track the file)
+$ git status (to check the status)
+$ git commit -m"c1"
+$ git reset 8370f28 ( to reset/make any changes/update to this file and revert back)
+$ git revert c4d3406 (undo changes...)
+$  git remote add origin https://github.com/balkhair786/mygit/tree/hbabranch
+
+git diff
 diff --git a/hba.txt b/hba.txt
 index 678b425..fe781ad 100644
 --- a/hba.txt
