@@ -1,4 +1,36 @@
- git diff
+Jenkins
+---
+1. Creating account in Jenkins
+
+2. Creating First jenkins job
+click on new item --> select freestyle project-->ok -->configure-->General--> Description-"mention what you want to perform in this job"
+go to Build Steps ->select Execute shell--->write the script on command box--> echo "Assalamu Alaikum" --->save and hit on Build now
+check on Build History.-- go to console output to check the status of the build
+
+-To redirect the script in system's directory
+-In Build steps description enter the following command " echo "Assalamu Alaikum"> /tmp/first_job.txt and hit on SAVE
+- GO TO console output and check the status
+- Aslo check on the followin directory : cat /tmp/first_job.txt
+
+
+2. Run Bash Script
+
+# vi basic.sh
+#!/bin/bash
+echo "This is first script on jenkins"-->save and exit -- cat basic.sh
+
+3. configuring Cron job
+4. working with GitHub
+5. Git Hub Auto Build (Eg: fire build at every change)
+6. Email Notifiy on job Failure
+7. Jenkins job for Remote Server(Transfering file from jenkins to another server-B) (Subject not clear to review one more time)
+
+8. Transfer Multiple Files
+9.Jenkins job with Ansible
+10. Quick Overview of Ansible Setup
+11.Project Remote Webserver Change
+
+git diff
 diff --git a/hba.txt b/hba.txt
 index 678b425..fe781ad 100644
 --- a/hba.txt
